@@ -14,3 +14,8 @@ publish:
 package-install:
 	pipx install dist/*.whl
 
+flake8:
+	poetry run flake8
+
+package-reinstall:
+	pipx reinstall-all
