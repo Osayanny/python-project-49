@@ -19,7 +19,7 @@ def engine(discription, game_logic):
             print('Correct!')
             correct += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(", end='')
+            print(f"'{user_answer}' is wrong answer ;(", end=' ')
             print(f"Correct answer was '{game_answer}'")
             print(f"Let's try again, {name}!")
             break
