@@ -4,7 +4,9 @@ from brain_games.games.prime import prime_logic
 
 
 def main():
-    discription = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    desc_part_one = 'Answer "yes" if given number is prime.'
+    desc_part_two = 'Otherwise answer "no".'
+    description = f'{desc_part_one} {desc_part_two}'
     engine(discription, prime_logic)
 
 

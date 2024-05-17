@@ -5,7 +5,7 @@ from brain_games.games.gcd import gcd_logic
 
 
 def main():
-    discription = 'Find the greatest common divisor of given numbers.'
+    description = 'Find the greatest common divisor of given numbers.'
     engine(discription, gcd_logic)
 
 

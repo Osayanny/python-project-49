@@ -6,7 +6,7 @@ from brain_games.games.calc import calc_logic
 
 
 def main():
-    discription = 'What is the result of the expression?'
+    description = 'What is the result of the expression?'
     engine(discription, calc_logic)
 
 

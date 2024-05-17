@@ -4,7 +4,7 @@ from brain_games.games.progression import progression_logic
 
 
 def main():
-    discription = 'What number is missing in the progression?'
+    description = 'What number is missing in the progression?'
     engine(discription, progression_logic)
 
 
