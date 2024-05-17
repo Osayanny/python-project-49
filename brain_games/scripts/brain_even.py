@@ -5,7 +5,7 @@ from brain_games.games.even import even_logic
 
 def main():
     description = 'Answer "yes" if the number is even, otherwise answer "no".'
-    engine(discription, even_logic)
+    engine(description, even_logic)
 
 
 if __name__ == '__main__':

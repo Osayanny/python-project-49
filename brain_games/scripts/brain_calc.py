@@ -7,7 +7,7 @@ from brain_games.games.calc import calc_logic
 
 def main():
     description = 'What is the result of the expression?'
-    engine(discription, calc_logic)
+    engine(description, calc_logic)
 
 
 if __name__ == '__main__':
