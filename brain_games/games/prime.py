@@ -9,7 +9,7 @@ def is_prime(num):
         if num % i == 0:
             divisiors_count += 1
 
-        if divisiors_count < 2:
+        if divisiors_count > 2:
             return 'no'
     return 'yes'
 
