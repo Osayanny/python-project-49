@@ -2,7 +2,7 @@ from brain_games.engine.special_funcs import generate_number
 
 
 def is_prime(num):
-    divisiors = [_ for _ in range(1, num+1)]
+    divisiors = [_ for _ in range(1, num + 1)]
     divisiors_count = 0
 
     for i in divisiors:
