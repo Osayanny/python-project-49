@@ -1,12 +1,13 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
-authors = ["Osayanny <osayanni7@gmail.com>"]
+description = "5 math games in the terminal"
+authors = ["Mikhail Kostyuchenko <osayanni7@gmail.com>"]
 readme = "README.md"
 packages = [
     {include = 'brain_games' },
 ]
+repository = 'https://github.com/Osayanny/python-project-49'
 [tool.poetry.dependencies]
 python = "^3.12"
 prompt = "^0.4.1"
