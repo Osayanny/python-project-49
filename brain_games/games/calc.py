@@ -7,6 +7,6 @@ def calc_logic():
     oper_1 = generate_number()
     oper_2 = generate_number()
     operator = random.choice(operators_list)
-    question = f'{oper_1}{operator}{oper_2}'
+    question = f'{oper_1} {operator} {oper_2}'
     answer = str(eval('oper_1' + operator + 'oper_2'))
     return (question, answer)
