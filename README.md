@@ -7,3 +7,4 @@
 * [![Calculator](https://asciinema.org/a/WXoEtopFE2NZPW64vsiOlqdGU)](https://asciinema.org/a/WXoEtopFE2NZPW64vsiOlqdGU)
 * [![Greatest common divisior](https://asciinema.org/a/oIKUPJdD5CK9kKys0uQaes7Xv)](https://asciinema.org/a/oIKUPJdD5CK9kKys0uQaes7Xv)
 * [![Progression](https://asciinema.org/a/TCkPrKMtRK9pU1F5sTmLPYz2C)](https://asciinema.org/a/TCkPrKMtRK9pU1F5sTmLPYz2C)
+* [![Prime or not](https://asciinema.org/a/6Zs7Q0zmTti7zxNitzhMfZHog)](https://asciinema.org/a/6Zs7Q0zmTti7zxNitzhMfZHog)
