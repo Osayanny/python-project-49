@@ -11,7 +11,7 @@ This project is set of 5 terminal games. Completed as first training project on 
 ---
 Choice one of five games and answer the questions. Three correct answers = win.
 
-####Installation
+#### Installation
 To install the package you need pipx version 1.4.3 and python 3.12 or highest.
 
 1. Clone this repository and install manually:
