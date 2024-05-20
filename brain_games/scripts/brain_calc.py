@@ -1,13 +1,12 @@
 #!usr/bin/env python3
 
 
-from brain_games.engine.engine import engine
-from brain_games.games.calc import calc_logic
+from brain_games.games import calc
+from brain_games.engine.engine import start_engine
 
 
 def main():
-    description = 'What is the result of the expression?'
-    engine(description, calc_logic)
+    start_engine(calc)
 
 
 if __name__ == '__main__':

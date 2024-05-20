@@ -1,21 +1,16 @@
 from brain_games.engine.cli import welcome_user
 
 
-def is_correct(user_answer, game_answer):
-    if game_answer == user_answer:
-        return True
-    return False
-
-
-def engine(discription, game_logic):
+def start_engine(module):
     name = welcome_user()
-    print(f'{discription}')
+    print(f'{module.DESCRIPTION}')
+    rounds_count = 3
     correct = 0
-    while correct != 3:
-        question, game_answer = game_logic()
+    while correct != rounds_count:
+        question, game_answer = module.get_logic()
         print(f'Question: {question}')
         user_answer = input('Answer: ')
-        if is_correct(user_answer, game_answer):
+        if user_answer == str(game_answer):
             print('Correct!')
             correct += 1
         else:

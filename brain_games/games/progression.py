@@ -1,18 +1,24 @@
 import random
-from brain_games.engine.special_funcs import generate_number
+
+
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+_TOP_BOUND = 100
+_BOTTOM_BOUND = 1
+_TOP_STEP_BOUND = 10
+_EL_IN_PROGRESS = 10
 
 
 def make_progression():
-    start = generate_number()
-    step = generate_number((1, 10))
-    stop = start + step * 10
+    start = random.randint(_BOTTOM_BOUND, _TOP_BOUND)
+    step = random.randint(_BOTTOM_BOUND, _TOP_STEP_BOUND)
+    stop = start + step * _EL_IN_PROGRESS
     return [str(i) for i in range(start, stop, step)]
 
 
-def progression_logic():
+def get_logic():
     progression = make_progression()
     answer = random.choice(progression)
     answer_index = progression.index(answer)
     progression[answer_index] = '..'
     question = ' '.join(progression)
-    return (question, answer)
+    return question, answer

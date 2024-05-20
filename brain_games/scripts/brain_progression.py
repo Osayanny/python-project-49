@@ -1,11 +1,11 @@
 #!usr/bin/env python3
-from brain_games.engine.engine import engine
-from brain_games.games.progression import progression_logic
+
+from brain_games.games import progression
+from brain_games.engine.engine import start_engine
 
 
 def main():
-    description = 'What number is missing in the progression?'
-    engine(description, progression_logic)
+    start_engine(progression)
 
 
 if __name__ == '__main__':

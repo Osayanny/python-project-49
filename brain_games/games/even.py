@@ -1,13 +1,21 @@
-from brain_games.engine.special_funcs import generate_number
+import random
+
+
+DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+_TOP_BOUND = 100
+_BOTTOM_BOUND = 1
 
 
 def is_even(num):
     if num % 2 == 0:
-        return 'yes'
-    return 'no'
+        return True
+    return False
 
 
-def even_logic():
-    question = generate_number()
-    answer = is_even(question)
-    return (question, answer)
+def get_logic():
+    question = random.randint(_BOTTOM_BOUND, _TOP_BOUND)
+    if is_even(question):
+        answer = 'yes'
+    else:
+        answer = 'no'
+    return question, answer

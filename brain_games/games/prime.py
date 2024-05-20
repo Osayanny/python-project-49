@@ -1,20 +1,26 @@
-from brain_games.engine.special_funcs import generate_number
+import random
+
+
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+_TOP_BOUND = 100
+_BOTTOM_BOUND = 1
 
 
 def is_prime(num):
-    divisiors = [_ for _ in range(1, num + 1)]
     divisiors_count = 0
-
-    for i in divisiors:
-        if num % i == 0:
+    for div in range(1, num + 1):
+        if num % div == 0:
             divisiors_count += 1
 
         if divisiors_count > 2:
-            return 'no'
-    return 'yes'
+            return False
+    return True
 
 
-def prime_logic():
-    question = generate_number()
-    answer = is_prime(question)
+def get_logic():
+    question = random.randint(_BOTTOM_BOUND, _TOP_BOUND)
+    if is_prime(question):
+        answer = 'yes'
+    else:
+        answer = 'no'
     return question, answer

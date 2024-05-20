@@ -1,22 +1,18 @@
-from brain_games.engine.special_funcs import generate_number
+import random
+from math import gcd
 
 
-def find_gcd(nums_tuple):
-    a = max(nums_tuple)
-    b = min(nums_tuple)
-    while b != 0:
-        remainder = a % b
-        a, b = b, remainder
-    return a
+DESCRIPTION = 'Find the greatest common divisor of given number.'
+_TOP_BOUND = 100
+_BOTTOM_BOUND = 1
 
 
-def gcd_logic():
-    first_num = generate_number()
-    second_num = generate_number()
+def get_logic():
+    first_num = random.randint(_BOTTOM_BOUND, _TOP_BOUND)
+    second_num = random.randint(_BOTTOM_BOUND, _TOP_BOUND)
 
     question = f'{first_num} {second_num}'
 
-    nums_tuple = (first_num, second_num)
-    answer = str(find_gcd(nums_tuple))
+    answer = gcd(first_num, second_num)
 
-    return (question, answer)
+    return question, answer
