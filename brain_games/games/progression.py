@@ -1,7 +1,7 @@
 import random
 
 
-DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+DESCRIPTION = 'What number is missing in the progression?'
 _TOP_BOUND = 100
 _BOTTOM_BOUND = 1
 _TOP_STEP_BOUND = 10
