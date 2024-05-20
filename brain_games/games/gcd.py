@@ -2,7 +2,7 @@ import random
 from math import gcd
 
 
-DESCRIPTION = 'Find the greatest common divisor of given number.'
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 _TOP_BOUND = 100
 _BOTTOM_BOUND = 1
 
