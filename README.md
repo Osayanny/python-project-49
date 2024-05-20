@@ -21,15 +21,15 @@ $ cd brain_games && make package-install
 ```
 
 #### Start Game
-To start one of five games, run
+To start one of five games, run in terminal:
 
 |game|command|
 |----|-------|
-|Even or not|`bash $ brain-even`|
-|Calculator|`bash $ brain-calc`|
-|Greatest common divisior|`bash $ brain-gcd`|
-|Progression| `bash $ brain-progression`|
-|Prime or not| `bash $ brain-prime`|
+|Even or not|`brain-even`|
+|Calculator|`brain-calc`|
+|Greatest common divisior|`brain-gcd`|
+|Progression| `brain-progression`|
+|Prime or not| `brain-prime`|
 
 ### Games demo
 ---
