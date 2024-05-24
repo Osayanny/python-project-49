@@ -15,7 +15,7 @@ def make_progression():
     return [str(i) for i in range(start, stop, step)]
 
 
-def get_logic():
+def get_question_and_answer():
     progression = make_progression()
     answer = random.choice(progression)
     answer_index = progression.index(answer)

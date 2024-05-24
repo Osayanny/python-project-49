@@ -12,7 +12,7 @@ def is_even(num):
     return False
 
 
-def get_logic():
+def get_question_and_answer():
     question = random.randint(_BOTTOM_BOUND, _TOP_BOUND)
     if is_even(question):
         answer = 'yes'

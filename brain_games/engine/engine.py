@@ -1,15 +1,18 @@
+import prompt
 from brain_games.engine.cli import welcome_user
 
 
-def start_engine(module):
+ROUNDS = 3
+
+
+def start_engine(game):
     name = welcome_user()
-    print(f'{module.DESCRIPTION}')
-    rounds_count = 3
+    print(f'{game.DESCRIPTION}')
     correct = 0
-    while correct != rounds_count:
-        question, game_answer = module.get_logic()
+    while correct != ROUNDS:
+        question, game_answer = game.get_question_and_answer()
         print(f'Question: {question}')
-        user_answer = input('Answer: ')
+        user_answer = prompt.string('Answer: ')
         if user_answer == str(game_answer):
             print('Correct!')
             correct += 1

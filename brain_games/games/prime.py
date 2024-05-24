@@ -7,6 +7,9 @@ _BOTTOM_BOUND = 1
 
 
 def is_prime(num):
+    if num < 2:
+        return False
+
     divisiors_count = 0
     for div in range(1, num + 1):
         if num % div == 0:
@@ -17,7 +20,7 @@ def is_prime(num):
     return True
 
 
-def get_logic():
+def get_question_and_answer():
     question = random.randint(_BOTTOM_BOUND, _TOP_BOUND)
     if is_prime(question):
         answer = 'yes'

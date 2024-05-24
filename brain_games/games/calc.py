@@ -6,16 +6,16 @@ _TOP_BOUND = 100
 _BOTTOM_BOUND = 1
 
 
-def get_logic():
-    operators_list = ['+', '-', '*']
-    oper_1 = random.randint(_BOTTOM_BOUND, _TOP_BOUND)
-    oper_2 = random.randint(_BOTTOM_BOUND, _TOP_BOUND)
-    operator = random.choice(operators_list)
-    question = f'{oper_1} {operator} {oper_2}'
+def get_question_and_answer():
+    operators = ['+', '-', '*']
+    operand_1 = random.randint(_BOTTOM_BOUND, _TOP_BOUND)
+    operand_2 = random.randint(_BOTTOM_BOUND, _TOP_BOUND)
+    operator = random.choice(operators)
+    question = f'{operand_1} {operator} {operand_2}'
     if operator == '+':
-        answer = oper_1 + oper_2
+        answer = operand_1 + operand_2
     elif operator == '-':
-        answer = oper_1 - oper_2
+        answer = operand_1 - operand_2
     elif operator == '*':
-        answer = oper_1 * oper_2
+        answer = operand_1 * operand_2
     return question, answer
