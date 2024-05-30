@@ -2,8 +2,8 @@ import random
 
 
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
-_TOP_BOUND = 100
-_BOTTOM_BOUND = 1
+_STOP = 100
+_START = 1
 
 
 def is_even(num):
@@ -13,9 +13,9 @@ def is_even(num):
 
 
 def get_question_and_answer():
-    question = random.randint(_BOTTOM_BOUND, _TOP_BOUND)
+    question = random.randint(_START, _STOP)
     if is_even(question):
         answer = 'yes'
     else:
         answer = 'no'
-    return question, answer
+    return str(question), answer

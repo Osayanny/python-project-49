@@ -2,16 +2,19 @@ import random
 
 
 DESCRIPTION = 'What number is missing in the progression?'
-_TOP_BOUND = 100
-_BOTTOM_BOUND = 1
-_TOP_STEP_BOUND = 10
-_EL_IN_PROGRESS = 10
+_STOP = 100
+_START = 1
+_STEP_START = 1
+_STEP_STOP = 10
+_ELEMENTS_START = 3
+_ELEMENTS_STOP = 10
 
 
 def make_progression():
-    start = random.randint(_BOTTOM_BOUND, _TOP_BOUND)
-    step = random.randint(_BOTTOM_BOUND, _TOP_STEP_BOUND)
-    stop = start + step * _EL_IN_PROGRESS
+    start = random.randint(_START, _STOP)
+    step = random.randint(_STEP_START, _STEP_STOP)
+    elements_count = random.randint(_ELEMENTS_START, _ELEMENTS_STOP)
+    stop = start + step * elements_count
     return [str(i) for i in range(start, stop, step)]
 
 
@@ -21,4 +24,4 @@ def get_question_and_answer():
     answer_index = progression.index(answer)
     progression[answer_index] = '..'
     question = ' '.join(progression)
-    return question, answer
+    return question, str(answer)
