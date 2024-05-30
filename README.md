@@ -17,7 +17,7 @@ To install the package you need pipx version 1.4.3 and python 3.12 or highest.
 1. Clone this repository and install manually:
 ```bash
 $ git clone https://github.com/Osayanny/python-project-49.git
-$ cd brain_games && make package-install
+$ cd python-project-49 && make build && make package-install
 ```
 
 #### Start Game
